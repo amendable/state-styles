@@ -1,0 +1,29 @@
+{
+  "name": "@amendable/state-styles",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amendable/state-styles",
+  "bugs": {
+    "url": "https://github.com/amendable/state-styles/issues"
+  },
+  "repository": "amendable/state-styles",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "microbundle": "^0.13.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "rimraf dist && microbundle build --no-compress -f modern,cjs",
+    "watch": "microbundle watch --no-compress"
+  },
+  "dependencies": {
+    "@amendable/hash": "^0.1.0",
+    "lodash": "^4.17.15"
+  }
+}
